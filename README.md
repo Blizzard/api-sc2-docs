@@ -305,6 +305,32 @@ as the average item level of the character.
 ## Ladder API
 
 The ladder API provides data about ladders for the current and previous sc2 seasons.
+The ladder API can be accessed by the following HTTP GET request
+
+```plain
+URL = Host + "/api/sc2/ladder" + ladderId
+```
+The ladderId is provided from the profile ladder information. The result will be
+all the members of the particular ladder, with their statistics for that ladder.
+
+<dl>
+  <dt>Example URL</dt>
+  <dd>/api/sc2/ladder/655</dd>
+</dl>
+
+The ladder API also provides the rankings for grandmasters.
+There are two queries available. These two provide the current and previous season rankings 
+of the grandmaster ladder for the region.
+
+<dl>
+  <dt>Current Season Grandmaster</dt>
+  <dd>/api/sc2/ladder/grandmaster</dd>
+</dl>
+
+<dl>
+  <dt>Previous Season Grandmaster</dt>
+  <dd>/api/sc2/ladder/grandmaster/last</dd>
+</dl>
 
 ## Data Resources
 
