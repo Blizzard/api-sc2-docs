@@ -1,7 +1,7 @@
 # Sc2 Community Web API
 
-This is the documentation for the RESTful APIs exposed through the World of
-Warcraft community site as a service to the World of Warcraft community.
+This is the documentation for the RESTful APIs exposed through the Starcraft 2
+community site as a service to the Starcraft 2 community.
 
 To view the inlined gist json examples you should view this document at
 [http://blizzard.github.com/api-sc2-docs/](http://blizzard.github.com/api-sc2-docs/).
