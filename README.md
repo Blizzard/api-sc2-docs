@@ -293,13 +293,19 @@ api url will be http://us.battle.net/api/sc2/profile/999000/1/DayNine/
 If you add `/ladders` to the profile url you can view ladder information for the
 player in question.
 
-When the items field is used, a map structure is returned that
-contains information on the equipped items of that character as well
-as the average item level of the character.
-
 <dl>
   <dt>Example URL</dt>
   <dd>/api/sc2/profile/999000/1/DayNine/ladders</dd>
+</dl>
+
+### Matches
+
+If you add `/matches` to the profile url you can view the match information for the
+last 10 matches.
+
+<dl>
+  <dt>Example URL</dt>
+  <dd>/api/sc2/profile/999000/1/DayNine/matches</dd>
 </dl>
 
 ## Ladder API
@@ -308,7 +314,7 @@ The ladder API provides data about ladders for the current and previous sc2 seas
 The ladder API can be accessed by the following HTTP GET request
 
 ```plain
-URL = Host + "/api/sc2/ladder" + ladderId
+URL = Host + "/api/sc2/ladder/" + ladderId
 ```
 The ladderId is provided from the profile ladder information. The result will be
 all the members of the particular ladder, with their statistics for that ladder.
