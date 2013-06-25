@@ -279,7 +279,7 @@ HTTP GET request.
 URL = Host + "/api/sc2/profile/" + id + "/" + realm + "/" + CharacterName
 ```
 
-You'll notice that this is identical to the website profile. So if you character
+You'll notice that this is identical to the website profile. So if your character
 url on the website is http://us.battle.net/sc2/en/profile/999000/1/DayNine/ your
 api url will be http://us.battle.net/api/sc2/profile/999000/1/DayNine/
 
@@ -301,7 +301,7 @@ player in question.
 ### Matches
 
 If you add `/matches` to the profile url you can view the match information for the
-last 10 matches.
+last 10 matches. Match dates are formatted in Unix epoch time.
 
 <dl>
   <dt>Example URL</dt>
