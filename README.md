@@ -121,7 +121,7 @@ available to registered applications.
 ### Authentication
 
 Although most of the application can be accessed without any form of
-authentication, we do support a form application registration and
+authentication, we do support a form of application registration and
 authentication. Application authentication involves creating and
 including an application identifier and a request signature and
 including those values with the request headers.
@@ -131,7 +131,7 @@ is that you can make more requests per day.
 
 #### Application Registration
 
-To send authenticated request you first need to register an
+To send an authenticated request you first need to register an
 application. Because registration isn't automated, application
 registration is limited to those who meet the following criteria:
 
@@ -142,7 +142,7 @@ registration is limited to those who meet the following criteria:
   more IP addresses.
 
 Registering an application is a matter of providing a description of
-the application, how you plan on using the API and your contact
+the application, how you plan on using the API, and your contact
 information to
 [api-support@blizzard.com](mailto:api-support@blizzard.com) with the
 subject "Application Registration Request". Once we receive your
@@ -154,7 +154,7 @@ or with application keys to use.
 **NOTE** The URLs presented below are for the wow api, but the same process
 applies for sc2 urls.
 
-To authenticate a request, simple include the "Authorization" header
+To authenticate a request, simply include the "Authorization" header
 with your application identifier and the request signature.
 
 *An example authenticated request*
@@ -168,7 +168,7 @@ In the above exmple, the value of the Authorization header has three
 parts `"BNET"`, `"c1fbf21b79c03191d"` and
 `"+3fE0RaKc+PqxN0gi8va5GQC35A="`. The first part is a processing
 directive for the Authorization header. The second and third values
-are the application public key and the request signature. The
+are the application public key and the request signature, respectively. The
 application public key is assigned by Blizzard during the application
 registration process. The signature is generated with each request and
 is described by the following algorithm.
@@ -218,8 +218,8 @@ error responses that you should be aware of.
 
 Errors are returned as JSON objects that contain "status" and "reason"
 attributes. The value of the "status" attribute will always be
-"nok". The reason will be an english string that may be, but is not
-limited to, one of the following strings.
+"nok". The reason will be an English string that may be, but is not
+limited to, one of the following strings:
 
 <table>
   <tr>
@@ -271,7 +271,7 @@ limited to, one of the following strings.
 
 ## Profile API
 
-The Profile API is the primary way to access data about a sc2 profile. This
+The Profile API is the primary way to access data about a Sc2 profile. This
 profile API can be used to fetch a single character profile at a time through an
 HTTP GET request.
 
@@ -290,7 +290,7 @@ api url will be http://us.battle.net/api/sc2/profile/999000/1/DayNine/
 
 ### Ladders
 
-If you add `/ladders` to the profile url you can view ladder information for the
+If you add `/ladders` to the profile url, you can view ladder information for the
 player in question.
 
 <dl>
@@ -300,7 +300,7 @@ player in question.
 
 ### Matches
 
-If you add `/matches` to the profile url you can view the match information for the
+If you add `/matches` to the profile url, you can view the match information for the
 last 10 matches. Match dates are formatted in Unix epoch time.
 
 <dl>
@@ -311,7 +311,7 @@ last 10 matches. Match dates are formatted in Unix epoch time.
 ## Ladder API
 
 The ladder API provides data about ladders for the current and previous sc2 seasons.
-The ladder API can be accessed by the following HTTP GET request
+The ladder API can be accessed by the following HTTP GET request:
 
 ```plain
 URL = Host + "/api/sc2/ladder/" + ladderId
@@ -354,7 +354,7 @@ URL = Host + "/api/sc2/data/achievements"
 
 ### Rewards
 
-The rewards data API provides information on profile portraits, decals, skins
+The rewards data API provides information on profile portraits, decals, skins,
 and animations that are available in Sc2.
 
 ```plain
