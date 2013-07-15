@@ -107,6 +107,13 @@ http://eu.battle.net/api/sc2/data/achievements?locale=fr_FR
 	  <a href="http://www.battlenet.com.cn/api/sc2/data/achievements?locale=zh_CN">zh_CN</a>
 	</td>
   </tr>
+  <tr>
+    <td>South East Asia</td>
+	<td>sea.battle.net</td>
+	<td>
+	  <a href="http://sea.battle.net/api/sc2/data/achievements?locale=en_US">en_US</a>
+	</td>
+  </tr>
 </table>
 
 ### Throttling
