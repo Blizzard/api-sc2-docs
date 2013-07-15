@@ -365,7 +365,7 @@ The rewards data API provides information on profile portraits, decals, skins,
 and animations that are available in Sc2.
 
 ```plain
-URL = Host + "/api/sc2/data/rewards
+URL = Host + "/api/sc2/data/rewards"
 ```
 
 ## Policies and Support
