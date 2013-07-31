@@ -374,7 +374,7 @@ URL = Host + "/api/sc2/data/rewards"
 For questions about the API, please use the Community Platform API
 forums as a platform to ask questions and get help.
 
-http://us.battle.net/wow/en/forum/2626217/
+*Forum link coming soon!*
 
 You can also email
 [api-support@blizzard.com](mailto:api-support@blizzard.com) for
